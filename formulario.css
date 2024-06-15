@@ -1,0 +1,75 @@
+p {
+    font-family: Arial, sans-serif; 
+}
+
+h2 + p {
+    font-weight: bold; 
+}
+
+
+.destaque {
+    font-family: Arial, sans-serif;
+}
+
+.destaque p {
+    font-weight: bold; 
+}
+
+.destaque strong {
+    color: red; 
+}
+
+.form-container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+.form-container h2 {
+    text-align: center;
+}
+.destaque {
+    margin-bottom: 10px;
+}
+.destaque label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.destaque input, .destaque select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.destaque input[type="checkbox"] {
+    width: auto;
+}
+.destaque .radio-label {
+    margin-right: 10px;
+}
+.destaque .checkbox-label {
+    font-size: 12px;
+}
+.destaque .btn-submit {
+    padding: 10px 20px;
+    background-color: pink;
+    border: none;
+    color: red;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    color: lemon; 
+}
+.destaque .btn-submit:hover {
+    color: #4CAF50; 
+}
