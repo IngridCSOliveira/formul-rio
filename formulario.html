@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa de Satisfação</title>
+    <style>
+        .form-container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-group .radio-label {
+            margin-right: 10px;
+        }
+        .form-group .checkbox-label {
+            font-size: 12px;
+        }
+        .form-group .btn-submit {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-group .btn-submit:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulário de Pesquisa de Satisfação</h2>
+        <form action="#" method="POST">
+            <!-- Dados Pessoais -->
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            
+            <!-- Perguntas da Pesquisa -->
+            <div class="form-group">
+                <label>1. Você está satisfeito com nossos serviços?</label><br>
+                <label class="radio-label"><input type="radio" name="satisfacao" value="sim" required> Sim</label>
+                <label class="radio-label"><input type="radio" name="satisfacao" value="nao" required> Não</label>
+            </div>
+            <div class="form-group">
+                <label>2. Recomendaria nossos serviços a amigos?</label><br>
+                <label class="radio-label"><input type="radio" name="recomendaria" value="sim" required> Sim</label>
+                <label class="radio-label"><input type="radio" name="recomendaria" value="nao" required> Não</label>
+            </div>
+            <div class="form-group">
+                <label for="motivo">3. Qual o principal motivo da sua avaliação?</label><br>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Selecione</option>
+                    <option value="qualidade">Qualidade do serviço</option>
+                    <option value="atendimento">Atendimento ao cliente</option>
+                    <option value="preco">Preço</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="autorizacao" name="autorizacao">
+                <label for="autorizacao" class="checkbox-label">Autorizo compartilhar minha resposta com terceiros.</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
